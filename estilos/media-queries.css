@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*
+até 600px: Mobile devices
+de 600 até 768px: iPads, Tablets
+de 768 até 992: Small screens, laptops
+de 992 até 1200: Desktops, large screens
+depois de 1201px —  Extra large screens, TV
+*/
+
+
+
+/* PARA TABLETS */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    #login {
+        width: 90vw;
+    }
+
+    #login>#imagem {
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    #login>#formulario {
+        float: right;
+        width: 70%;
+        padding-left: 10px;
+
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    #login {
+        width: 950px;
+    }
+
+    #imagem {
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    #formulario {
+        float: right;
+        width: 70%;
+        padding-left: 10px;
+        
+    }
+
+
+
+    /*Não é preciso o max width pois não vai haver mais config de media query dps dessa and (max-width: 1200px)*/
+}
