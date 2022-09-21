@@ -51,17 +51,22 @@ depois de 1201px —  Extra large screens, TV
 
         width: 30%;
         height: 100%;
-        float: left;
+        float: right;
     }
 
     #formulario {
-        float: right;
+        float: left;
         width: 70%;
-        padding-left: 10px;
 
     }
 
+    #formulario > h1{
+        font-size: 2em;
+    }
 
+    #formulario > p{
+        font-size: 1.2em;
+    }
 
     /*Não é preciso o max width pois não vai haver mais config de media query dps dessa and (max-width: 1200px)*/
 }
