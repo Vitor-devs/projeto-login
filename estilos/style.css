@@ -57,15 +57,54 @@ main {
     padding: 10px;
 }
 
-#formulario > h1{
+#formulario>h1 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-#formulario > p{
+#formulario>p {
     font-size: 0.8em;
 }
 
-input{
+form>.campo {
+    background-color: #602c8294;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+}
+
+input {
     margin-left: 5px;
+}
+
+form>input[type="submit"] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to top, #602c8259, #49a09d59);
+    color: black;
+    border: .4px solid rgba(0, 0, 0, 0.658);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+form>input[type="submit"]:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to top, #602c829a, #49a09d93);
+
+}
+
+form>a.botao {
+    display: block;
+    text-align: center;
+    font-size: .8em;
+    width: 100%;
+    text-decoration: none;
+}
+
+form>a.botao:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
